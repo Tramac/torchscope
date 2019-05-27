@@ -26,7 +26,7 @@ class ModelSummary(object):
         self.input_size = input_size
 
         # batch_size of 2 for batchnorm
-        x = torch.rand([1] + input_size).type(dtype)
+        x = torch.rand([2] + input_size).type(dtype)
 
         # create properties
         self.summary = OrderedDict()
